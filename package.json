@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "npx": "npx",
+    "dart": "dart"
+  }
+}

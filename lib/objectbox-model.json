@@ -1,0 +1,103 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:4221144456538617952",
+      "lastPropertyId": "4:2500166641564169086",
+      "name": "IntervalUnitDTO",
+      "properties": [
+        {
+          "id": "1:7688956520409251789",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:708489844979524585",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:4464565192849822204",
+          "name": "minutes",
+          "type": 6
+        },
+        {
+          "id": "4:2500166641564169086",
+          "name": "seconds",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:529688720015730729",
+      "lastPropertyId": "4:6035336818404648886",
+      "name": "TrainingIntervalDTO",
+      "properties": [
+        {
+          "id": "1:4942536937933950437",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7481141396099395061",
+          "name": "trainingId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:4852505231575179654",
+          "relationTarget": "TrainingSet"
+        },
+        {
+          "id": "3:1527699537739119790",
+          "name": "intervalId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "2:8336071821485665981",
+          "relationTarget": "IntervalUnitDTO"
+        },
+        {
+          "id": "4:6035336818404648886",
+          "name": "position",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:8949637745982211695",
+      "lastPropertyId": "2:3289040062561589475",
+      "name": "TrainingSet",
+      "properties": [
+        {
+          "id": "1:3563151904060716220",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3289040062561589475",
+          "name": "name",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "3:6200928973083312985"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:8949637745982211695",
+  "lastIndexId": "3:6200928973083312985",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
